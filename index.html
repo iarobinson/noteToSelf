@@ -3,6 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Note to Self - Local Storage Practice</title>
+  <script>
+    // localStorage = Web Storage API as defined by the browser
+    // setItem = The method we use to store something
+    // setItem method takes two strings as arguments that act as key/value pairs
+    // "Pick up dry cleaning" is the value you'd like to store in local storage
+    //  * You can only store Strings using this function
+    localStorage.setItem("sticky_0", "Pick up dry cleaning");
+    localStorage.setItem("sticky_1", "Cancel cable tv, who watches TV?");
+    // Now localStorage should have saved { "sticky_0": "Pick ...cleaning", "sticky_1": "Cancel... TV?" };
+    
+    var sticky = localStorage.getItem("sticky_0");
+    alert(sticky);
+    // load this page to verify localStorage object which carries value for sticky_0
+  </script>
 </head>
 
 <body>
